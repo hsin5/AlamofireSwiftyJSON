@@ -15,8 +15,8 @@ let package = Package(
             targets: ["AlamofireSwiftyJSON"])
   ],
   dependencies: [
-      .package(url: "https://github.com/Alamofire/Alamofire.git", majorVersion: 4),
-      .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", majorVersion: 5)
+      .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "4.9.1")),
+      .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", .upToNextMajor(from: "5.0.0"))
   ],
   targets: [
       .target(name: "AlamofireSwiftyJSON",
