@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.5
 
 import PackageDescription
 
@@ -14,10 +14,10 @@ let package = Package(
             name: "AlamofireSwiftyJSON",
             targets: ["AlamofireSwiftyJSON"])
   ],
-  //dependencies: [
-  //    .Package(url: "https://github.com/Alamofire/Alamofire.git", majorVersion: 4),
-  //    .Package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", majorVersion: 5)
-  //],
+  dependencies: [
+      .Package(url: "https://github.com/Alamofire/Alamofire.git", majorVersion: 4),
+      .Package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", majorVersion: 5)
+  ],
   targets: [
       .target(name: "AlamofireSwiftyJSON")
   ]
